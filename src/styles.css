@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background: #24252D !important;
+}
+
+.container {
+    color: #CACACC;
+}
+
+.subHeading {
+    color: white;
+    font-weight: 300;
+}
+
+#profileP {
+    content: url('./assets/img/me.png');
+}
+
+.smallerImg {
+    width: 20%;
+}
+
+i:hover {
+    color: white !important;
+}
+
+.changeLogDetails {
+    font-weight: 300;
+    color: lightgray;
+}
+
+.projects {
+    background: #2F313B;
+}
+
+.liProject {
+    text-decoration: none;
+    list-style: none;
+}
+
+.projectTitle {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.projectTime {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.projectImage {
+    height: 150px;
+    width: 150px;
+    border: 3px solid white;
+    border-radius: 0.25rem;
+}
+
+.projectDiv {
+    font-size: 14px;
+}
+
+.projectDescription {
+    background: rgb(63, 65, 78);
+}
+
+.bio {
+    background: #2F313B;
+    color: lightgray;
+    line-height: 1.8em;
+}

@@ -1,20 +1,61 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container mt-3">
+    <span class="text-center">
+        <h1>{{portfolio.firstName + ' ' + portfolio.lastName}}</h1>
+        <h2 class="subHeading">{{portfolio.subHeading}}</h2>
+        <img id="profileP" class="rounded-circle mx-auto d-block smallerImg" alt="Profile picture">
+    </span>
+    <div class="row justify-content-center">
+        <a [href]="social.link" class="p-2" target="_blank" *ngFor="let social of portfolio.socialMedia">
+            <i [style.color]="social.color" [class]="social.icon"></i>
+        </a>
+    </div>
+    <div>
+        <h3>
+            <i (click)="toggleOpen('logOpen')" *ngIf="!logOpen else logExpanded" class="fa fa-plus"></i>
+            <ng-template #logExpanded>
+                <i (click)="toggleOpen('logOpen')" class="fa fa-minus"></i>
+            </ng-template>
+            Changelog
+        </h3>
+        <p class="description">
+            Some of my accomplishments.
+        </p>
+        <div *ngIf="logOpen" [@fadeInOut]>
+            <ul>
+                <portfolio-changelog (toggleActiveChange)="toggleActiveChange($event)" *ngFor="let change of portfolio.changeLog" [change]="change"></portfolio-changelog>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h3>
+            <i class="fa fa-plus" *ngIf="!projectOpen else projectExpanded" (click) = "toggleOpen('projectOpen')"></i>
+            <ng-template #projectExpanded>
+                <i class="fa fa-minus" (click)="toggleOpen('projectOpen')"></i>
+            </ng-template>
+            Projects
+        </h3>
+        <p class="description">
+            Projects that I've created.
+        </p>
+        <div *ngIf="projectOpen" class="projects container rounded" [@fadeInOut]>
+            <ul class="row p-0 pb-2">
+                <portfolio-project class="col-lg-6 col-12" *ngFor="let project of portfolio.projects; last as isLast" [project]="project"></portfolio-project>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h3>
+            <i class="fa fa-plus" *ngIf="!bioOpen else bioExpanded" (click) = "toggleOpen('bioOpen')"></i>
+            <ng-template #bioExpanded>
+                <i class="fa fa-minus" (click)="toggleOpen('bioOpen')"></i>
+            </ng-template>
+            Biography
+        </h3>
+        <p class="description">
+            Some brief info about me.
+        </p>
+        <div *ngIf="bioOpen" class="p-5 mt-4 mb-5 bio rounded" [@fadeInOut]>
+            {{portfolio.speakerBio}}
+        </div>
+    </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
