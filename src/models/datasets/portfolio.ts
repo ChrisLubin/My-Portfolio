@@ -62,6 +62,16 @@ export const PortfolioData: Portfolio = {
     ],
     projects: [
     {
+        title: 'Kahoot-Like App',
+        description: 'This application is inspired by Kahoot, an application mainly used by teachers to quiz their students all at once in realtime.',
+        color: '#9EA8FF',
+        month: 'August',
+        year: 2019,
+        link: 'http://lamp.cse.fau.edu/~clubin2015/kahoot',
+        imgSrc: 'https://github.com/ChrisLubin/Kahoot-Like-App/blob/master/images/screenshot2.png?raw=true',
+        githubLink: 'https://github.com/ChrisLubin/Kahoot-Like-App'
+    },
+    {
         title: 'Car Comparison Application',
         description: 'This tool allows anyone to compare the specifications of up to three different cars at the same time.',
         color: '#D6CABD',
