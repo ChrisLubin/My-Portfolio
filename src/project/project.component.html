@@ -5,14 +5,21 @@
         <div class="col-6">
             <img class="projectImage ml-3 d-block" src="{{project.imgSrc}}" alt="Project image">
         </div>
-        <div class="mt-1 pl-md-0 projectDiv d-flex flex-column col-6">
+        <div class="d-flex flex-column pl-md-0 projectDiv col-6">
             <div class="projectDescription p-2 rounded">
                 <span [style.color]="project.color">{{project.description}}</span>
             </div>
-                <div class="text-center d-flex flex-row mt-auto">
-                    <a [href]="project.githubLink" target="_blank" class=""><button [style.background-color]="project.color" class="btn btn-light mr-1 mb-sm-0">Source Code</button></a>
-                    <a [href]="project.link" target="_blank" class=""><button [style.background-color]="project.color" class="btn btn-light">Visit Page</button></a>
-                </div>
+            <div id="topBtns" class="d-flex flex-row mt-auto text-center">
+                <a [href]="project.githubLink" target="_blank" class=""><button [style.background-color]="project.color" class="btn btn-light mr-1 mb-sm-0">Source Code</button></a>
+                <a [href]="project.link" target="_blank" class=""><button [style.background-color]="project.color" class="btn btn-light">Visit Page</button></a>
+            </div>
+        </div>
+    </div>
+     <!-- Only visible on small screens -->
+     <div id="bottomBtns" class="row d-none mt-2">
+        <div class="ml-auto mr-auto text-center">
+            <a [href]="project.githubLink" target="_blank" class=""><button [style.background-color]="project.color" class="btn btn-light mr-1 mb-sm-0">Source Code</button></a>
+            <a [href]="project.link" target="_blank" class=""><button [style.background-color]="project.color" class="btn btn-light">Visit Page</button></a>
         </div>
     </div>
 </li>

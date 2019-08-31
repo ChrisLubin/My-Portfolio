@@ -1,3 +1,24 @@
+@media only screen and (max-width: 375px) {
+    .projectImage {
+        height: 120px !important;
+        width: 120px !important;
+    }
+
+    .projectDescription {
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    #topBtns {
+        display: none !important;
+    }
+
+    #bottomBtns {
+        display: block !important;
+    }
+}
+
 body {
     background: #24252D !important;
 }
@@ -59,7 +80,9 @@ i:hover {
 }
 
 .projectDescription {
+    max-height: 150px;
     background: rgb(63, 65, 78);
+    overflow: auto;
 }
 
 .bio {
