@@ -14,7 +14,12 @@ export const PortfolioData: Portfolio = {
     {
         icon: 'fa fa-github fa-2x',
         link: 'https://github.com/ChrisLubin',
-        color: '#6e5494'
+        color: '#6E5494'
+    },
+    {
+        icon: 'fa fa-file fa-2x',
+        link: 'https://drive.google.com/open?id=12ri7V_81rEzX26JRonNXOktlRbG-oX8V',
+        color: '#4F90CD'
     }
     ],
     introduction: "Hi, I'm Christoppher Lubin, and I am a software engineer intern who currently attends Florida Atlantic University.",
