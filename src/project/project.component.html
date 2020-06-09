@@ -1,13 +1,13 @@
 <li class="liProject py-3 h-100">
-    <div [style.color]="project.color" class="text-center"><span class="projectTitle">{{project.title}}</span></div>
-    <div [style.color]="project.color" class="text-center"><span class="projectTime">{{project.month + ' ' + project.year}}</span></div>
+    <div [style.color]="project.color" class="text-center"><span class="projectTitle">{{ project.title }}</span></div>
+    <div [style.color]="project.color" class="text-center"><span class="projectTime">{{ project.month + ' ' + project.year }}</span></div>
     <div class="row mt-2">
         <div class="col-6">
-            <img class="projectImage ml-3 d-block" src="{{project.imgSrc}}" alt="Project image">
+            <img class="projectImage ml-3 d-block" [src]="project.imgSrc" alt="Project image">
         </div>
         <div class="d-flex flex-column pl-md-0 projectDiv col-6">
             <div class="projectDescription p-2 rounded">
-                <span [style.color]="project.color">{{project.description}}</span>
+                <span [style.color]="project.color">{{ project.description }}</span>
             </div>
             <div id="topBtns" class="d-flex flex-row mt-auto text-center">
                 <a [href]="project.githubLink" target="_blank" class=""><button [style.background-color]="project.color" class="btn btn-light mr-1 mb-sm-0">Source Code</button></a>

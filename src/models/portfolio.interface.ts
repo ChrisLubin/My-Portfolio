@@ -7,7 +7,6 @@ export interface Portfolio {
     lastName: string;
     subHeading: string;
     socialMedia: Social[];
-    introduction: string;
     changeLog: ChangeLog[];
     projects: Projects[];
     speakerBio: string;

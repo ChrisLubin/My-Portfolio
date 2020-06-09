@@ -1,7 +1,7 @@
 <div class="container mt-3">
     <span class="text-center">
-        <h1>{{portfolio.firstName + ' ' + portfolio.lastName}}</h1>
-        <h2 class="subHeading">{{portfolio.subHeading}}</h2>
+        <h1>{{ portfolio.firstName + ' ' + portfolio.lastName }}</h1>
+        <h2 class="subHeading">{{ portfolio.subHeading }}</h2>
         <img id="profileP" class="rounded-circle mx-auto d-block smallerImg" alt="Profile picture">
     </span>
     <div class="row justify-content-center">
@@ -28,7 +28,7 @@
     </div>
     <div>
         <h3>
-            <i class="fa fa-plus" *ngIf="!projectOpen else projectExpanded" (click) = "toggleOpen('projectOpen')"></i>
+            <i class="fa fa-plus" *ngIf="!projectOpen else projectExpanded" (click)="toggleOpen('projectOpen')"></i>
             <ng-template #projectExpanded>
                 <i class="fa fa-minus" (click)="toggleOpen('projectOpen')"></i>
             </ng-template>
@@ -45,7 +45,7 @@
     </div>
     <div>
         <h3>
-            <i class="fa fa-plus" *ngIf="!bioOpen else bioExpanded" (click) = "toggleOpen('bioOpen')"></i>
+            <i class="fa fa-plus" *ngIf="!bioOpen else bioExpanded" (click)="toggleOpen('bioOpen')"></i>
             <ng-template #bioExpanded>
                 <i class="fa fa-minus" (click)="toggleOpen('bioOpen')"></i>
             </ng-template>
@@ -55,7 +55,7 @@
             Some brief info about me.
         </p>
         <div *ngIf="bioOpen" class="p-5 mt-4 mb-5 bio rounded" [@fadeInOut]>
-            {{portfolio.speakerBio}}
+            {{ portfolio.speakerBio }}
         </div>
     </div>
 </div>

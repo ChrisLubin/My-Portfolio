@@ -1,5 +1,5 @@
-<li [ngStyle] = "{'color': change.color}" >
-    <div>{{change.month + ' - ' + change.year}}</div>
-    <div><i class="fa fa-info-circle" (click)="toggleChange(change)" [style.color]="change.showDetails ? 'white' : ''"></i> {{change.highlight}}</div>
-    <div *ngIf="change.showDetails" class="changeLogDetails" [@fadeInOut]>{{change.details}}</div>
+<li [ngStyle]="{ 'color': change.color }" >
+    <div>{{ change.month + ' - ' + change.year }}</div>
+    <div><i class="fa fa-info-circle" (click)="toggleChange(change)" [style.color]="change.showDetails ? 'white' : ''"></i> {{ change.highlight }}</div>
+    <div *ngIf="change.showDetails" class="changeLogDetails" [@fadeInOut]>{{ change.details }}</div>
 </li>

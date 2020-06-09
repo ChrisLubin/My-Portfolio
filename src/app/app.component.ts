@@ -7,8 +7,7 @@ import { ChangeLog } from 'src/models/changeLog.interface';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [
-    fadeInOut]
+  animations: [fadeInOut]
 })
 
 export class AppComponent implements OnInit {
@@ -38,6 +37,7 @@ export class AppComponent implements OnInit {
   public toggleActiveChange(toggleChange: ChangeLog): void {
     toggleChange.showDetails = !toggleChange.showDetails;
 
+    // Stop showing another changelog's details
     for (let change of this.portfolio.changeLog) {
       if (change != toggleChange) {
         change.showDetails = false;

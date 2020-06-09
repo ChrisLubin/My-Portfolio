@@ -4,7 +4,7 @@ export { Portfolio } from '../portfolio.interface';
 export const PortfolioData: Portfolio = {
     firstName: 'Christopher',
     lastName: 'Lubin',
-    subHeading: 'Software Engineer Intern',
+    subHeading: 'Full Stack Software Developer',
     socialMedia: [
     {
         icon: 'fa fa-linkedin fa-2x',
@@ -22,8 +22,23 @@ export const PortfolioData: Portfolio = {
         color: '#4F90CD'
     }
     ],
-    introduction: "Hi, I'm Christoppher Lubin, and I am a software engineer intern who currently attends Florida Atlantic University.",
     changeLog: [
+    {
+        color: '#EB4888',
+        month: 'January',
+        year: 2020,
+        highlight: "Became a Full Stack Software Developer",
+        details: "My first role in my career!",
+        showDetails: false
+    },
+    {
+        color: '#24D05A',
+        month: 'December',
+        year: 2019,
+        highlight: "Graduated from Florida Atlantic University",
+        details: "I graduated magna cum laude with a B.S. in Computer Science.",
+        showDetails: false
+    },
     {
         color: '#10A2F5',
         month: 'April',
@@ -127,5 +142,5 @@ export const PortfolioData: Portfolio = {
         githubLink: 'https://github.com/ChrisLubin/Math-Game'
     }
     ],
-    speakerBio: 'Chris is currently a senior at Florida Atlantic University who is going to graduate with a BS in Computer Science in December of 2019. He is a self-motivated individual who is striving to become the best web developer that he can be. One of his major goals is to become a senior full stack developer within five years into his career as a web developer. Chris hopes to achieve this goal by continuously learning throughout his career on his own time.'
+    speakerBio: 'Chris is currently a full stack software developer working at IBI Group Inc. He graduated from Florida Atlantic University magna cum laude with a B.S. in Computer Science in December of 2019. He is a self-motivated individual who is striving to become the best web developer that he can be. One of his major goals is to become a senior full stack developer within five years into his career as a software developer. Chris hopes to achieve this goal by continuously learning throughout his career on his own time.'
 }
