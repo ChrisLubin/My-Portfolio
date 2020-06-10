@@ -33,6 +33,8 @@ body {
 }
 
 #profileP {
+    max-height: 190px;
+    max-width: 190px;
     content: url('./assets/img/me.png');
 }
 
