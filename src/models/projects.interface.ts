@@ -4,7 +4,7 @@ export interface Projects {
     color: string;
     month: string;
     year: number;
-    link: string;
-    imgSrc: string;
+    link?: string;
+    imgSrc?: string;
     githubLink: string;
 }

@@ -82,6 +82,14 @@ export const PortfolioData: Portfolio = {
     ],
     projects: [
     {
+        title: 'FAU Course-Checker',
+        description: 'This application will constantly check for an opening in a course you\'re waiting to join then text or email you about it. (Not a web app so it has no picture)',
+        color: '#E4E4E4',
+        month: 'December',
+        year: 2019,
+        githubLink: 'https://github.com/ChrisLubin/FAU-Course-Checker'
+    },
+    {
         title: 'Kahoot-Like App',
         description: 'This application is inspired by Kahoot, an application mainly used by teachers to quiz their students all at once in realtime.',
         color: '#9EA8FF',
