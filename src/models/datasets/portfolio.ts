@@ -16,11 +16,11 @@ export const PortfolioData: Portfolio = {
         link: 'https://github.com/ChrisLubin',
         color: '#6E5494'
     },
-    {
-        icon: 'fa fa-file fa-2x',
-        link: 'https://drive.google.com/open?id=12ri7V_81rEzX26JRonNXOktlRbG-oX8V',
-        color: '#4F90CD'
-    }
+    // {
+    //     icon: 'fa fa-file fa-2x',
+    //     link: 'https://drive.google.com/open?id=12ri7V_81rEzX26JRonNXOktlRbG-oX8V',
+    //     color: '#4F90CD'
+    // }
     ],
     changeLog: [
     {
