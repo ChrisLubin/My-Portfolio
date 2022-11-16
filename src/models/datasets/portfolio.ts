@@ -4,7 +4,7 @@ export { Portfolio } from '../portfolio.interface';
 export const PortfolioData: Portfolio = {
     firstName: 'Christopher',
     lastName: 'Lubin',
-    subHeading: 'Full Stack Software Developer',
+    subHeading: 'Front-End Software Engineer',
     socialMedia: [
     {
         icon: 'fa fa-linkedin fa-2x',
@@ -18,17 +18,33 @@ export const PortfolioData: Portfolio = {
     },
     {
         icon: 'fa fa-file fa-2x',
-        link: 'https://drive.google.com/file/d/1nz3n_6IatQCt81Dr2y_Ok-yXWxPSYHCH/view?usp=share_link',
+        link: 'https://drive.google.com/file/d/1Fvrr2lZE5xB6czt6GdgpbvSkaIXf0v4c/view?usp=share_link',
         color: '#4F90CD'
     }
     ],
     changeLog: [
     {
+      color: '#24D05A',
+      month: 'October',
+      year: 2021,
+      highlight: "Took On the Biggest Project That I Was Ever Tasked With",
+      details: "I was tasked with rearchitecting the keyboard shortcuts system on the main web application that my team serviced. It included writing up pages of documentation, communicating with product managers and designers on requirements that needed specificity, and about 2 months of coding to implement the features with tests.",
+      showDetails: false
+    },
+    {
+      color: '#10A2F5',
+      month: 'January',
+      year: 2021,
+      highlight: "Moved On to Become a Front-End Engineer",
+      details: "RingCentral played a crucial part in advancing my career by having high standards and surrounding me with so many talented engineers.",
+      showDetails: false
+    },
+    {
         color: '#EB4888',
         month: 'January',
         year: 2020,
         highlight: "Became a Full Stack Software Developer",
-        details: "My first role in my career!",
+        details: "The first role in my career!",
         showDetails: false
     },
     {
@@ -44,7 +60,7 @@ export const PortfolioData: Portfolio = {
         month: 'April',
         year: 2019,
         highlight: "Enhanced Unify's Circuit Google Assistant",
-        details: "This is a big accomplishment for me because I was given the opportunity to enhance Unify's Google Assistant application using Node.js even though I am on the automation team.",
+        details: "This was a big accomplishment for me because I was given the opportunity to enhance Unify's Google Assistant application using Node.js, essentially working as a feature engineer even though I was on the automation team.",
         showDetails: false
     },
     {
@@ -52,7 +68,7 @@ export const PortfolioData: Portfolio = {
         month: 'August',
         year: 2018,
         highlight: 'Internship at Unify',
-        details: "For this role I am on the automation team that tests the company's flagship product, Circuit. We mainly use Groovy as our programming language.",
+        details: "For this role, I was on the automation team that tested the company's flagship product, Circuit. We mainly used Groovy as our programming language of choice.",
         showDetails: false
     },
     {
@@ -76,7 +92,7 @@ export const PortfolioData: Portfolio = {
         month: 'November',
         year: 2014,
         highlight: 'Intership at the Museum of Discovery and Science',
-        details: 'This internship was a two year experience where I got to learn more about the museum and helped build a mobile application.',
+        details: 'This internship was a two year experience where I got to learn more about the museum and helped build an Android mobile application.',
         showDetails: false
     }
     ],
@@ -150,5 +166,5 @@ export const PortfolioData: Portfolio = {
         githubLink: 'https://github.com/ChrisLubin/Math-Game'
     }
     ],
-    speakerBio: 'Chris is currently a full stack software developer working at IBI Group Inc. He graduated from Florida Atlantic University magna cum laude with a B.S. in Computer Science in December of 2019. He is a self-motivated individual who is striving to become the best web developer that he can be. One of his major goals is to become a senior full stack developer within five years into his career as a software developer. Chris hopes to achieve this goal by continuously learning throughout his career on his own time.'
+    speakerBio: 'Chris is currently a front-end software engineer working at RingCentral. He currently has 3 years of experience in the web development industry. He graduated from Florida Atlantic University magna cum laude with a B.S. in Computer Science in December of 2019. He is a self-motivated individual who is striving to become the best engineer that he can be. One of his major goals is to become a senior engineer within seven years into his career as a software engineer. Chris hopes to achieve this goal by continuously learning throughout his career on the job and on his own time.'
 }
